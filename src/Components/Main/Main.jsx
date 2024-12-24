@@ -128,7 +128,7 @@ const Main = () => {
 
   useEffect(()=>{
     Aos.init({duration:2000})
-   },{})
+   },[])
   
 
 

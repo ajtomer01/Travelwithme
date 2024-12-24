@@ -1,10 +1,10 @@
-import React, {use, useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './home.css'
 import video from '../../Assets/video2.mp4'
 import { GrLocation } from "react-icons/gr"
 import { HiFilter } from "react-icons/hi"
 import { FiFacebook } from "react-icons/fi"
-import { CiInstagram  } from "react-icons/ci"
+import { CiInstagram } from "react-icons/ci"
 import { FaTripadvisor } from "react-icons/fa"
 import { BsListTask } from "react-icons/bs"
 import { TbApps } from "react-icons/tb"
@@ -15,11 +15,11 @@ import 'aos/dist/aos.css'
 
 
 const Home = () => {
- //
+  //
 
- useEffect(()=>{
-  Aos.init({duration:2000})
- },{})
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
 
 
 
@@ -41,21 +41,21 @@ const Home = () => {
 
         </div>
 
-        <div  data-aos="fade-up" className="cardDiv grid">
-        
+        <div data-aos="fade-up" className="cardDiv grid">
+
           <div className="destinationInput">
             <label htmlFor="city">Search your destination:</label>
             <div className="input flex">
-              <input type="text" placeholder='Enter name here...'/>
-              <GrLocation className="icon"/>
+              <input type="text" placeholder='Enter name here...' />
+              <GrLocation className="icon" />
             </div>
           </div>
-          
+
           <div className="dateInput">
             <label htmlFor="date">Select your date:</label>
             <div className="input flex">
               <input type="date" />
-              
+
             </div>
           </div>
 
@@ -65,28 +65,28 @@ const Home = () => {
               <h3 className="total">$5000</h3>
             </div>
             <div className="input flex">
-              <input type="range" max="5000"  min="1000"/>
+              <input type="range" max="5000" min="1000" />
             </div>
           </div>
 
           <div className="searchOptions flex">
-          <HiFilter  className='icon'/>
-          <span>MORE FILTERS</span>
+            <HiFilter className='icon' />
+            <span>MORE FILTERS</span>
 
           </div>
         </div>
 
         <div data-aos="fade-up" className="homeFooterIcons flex">
           <div className="rightIcons">
-          <FiFacebook className='icon'/>
-          <CiInstagram className='icon'/>
-          <FaTripadvisor className='icon'/>
+            <FiFacebook className='icon' />
+            <CiInstagram className='icon' />
+            <FaTripadvisor className='icon' />
 
           </div>
 
           <div className="leftIcons">
-          <BsListTask className='icon'/>
-          <TbApps className='icon'/>
+            <BsListTask className='icon' />
+            <TbApps className='icon' />
 
           </div>
         </div>
