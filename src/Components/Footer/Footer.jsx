@@ -17,7 +17,7 @@ const Footer = () => {
 
    useEffect(()=>{
     Aos.init({duration:2000})
-   },{})
+   },[])
 
 
   return (
